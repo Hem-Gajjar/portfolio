@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hem : Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="css_index.css">
+
+
+
+</head>
+
+<body id="all">
+    <header>
+        <nav>
+            <div class="left">Hem's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <!-- <li><a href="services.html">Services</a></li> -->
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contactus.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello there! I'm <span class="name">Hem Gajjar</span> <br>and I am a <br>
+                <span id="element"></span><br>
+                <button onclick="resume()">Download Resume</button>
+                <button onclick="redirect()">Visit GitHub</button>
+            </div>
+            <div class="rightSection">
+                <img src="img/developer.gif" alt="">
+            </div>
+        </section>
+        <section class="secondSection">
+            <hr>
+            <span id="element2"></span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="img/html_logo.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer [2020-2023]
+                    </div>
+                    <div class="vertical-desc">
+                        In 2020, I ventured into HTML web development and quickly fell in love with its creative possibilities. I designed numerous web pages and sites for personal projects and college assignments, discovering the joy of transforming ideas into digital realities.
+                        With every challenge, I grew more resilient and adaptable.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="img/vbdotnet.png" alt="">
+                    <div class="vertical-title">
+                        VB.net Developer [2021-2023]
+                    </div>
+                    <div class="vertical-desc">
+                        In 2021, I embarked on a thrilling journey into the world of VB.NET development, and from that moment on, there was no looking back. The pivotal moment in my path came during my 5th semester of diploma studies when I took on an ambitious project named
+                        "Technostuff Sales and Inventory System."
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div style="display: flex;">
+
+                        <img class="image-top" style="   width: 60px; position: relative;
+                        left: -39px;" src="img/php.png" alt="">
+                        <img class="image-top" style="position: relative;
+                        left: -27px;
+                        border: 1px solid black;
+                        border-radius: 100px;" src="img/java.png" alt="">
+                    </div>
+                    <div class="vertical-title">
+                        PHP & Java <br> [2022-2023]
+                    </div>
+                    <div class="vertical-desc">
+
+                        In my 5th semester, I gained knowledge in PHP, and in my 6th semester, I explored Java, Servlets, and JSP for web development. These experiences ignited my passion for coding, and I aim to create impactful web solutions that resonate with users and contribute
+                        to the dynamic world of technology.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="img/aspdotnet.png" alt="">
+                    <div class="vertical-title">
+                        ASP.net Developer [2022-2023]
+                    </div>
+                    <div class="vertical-desc">
+                        In 2022, I began my ASP.NET development journey and took on an exciting project during my 6th semester of diploma studies – the "Planet Shopping Cart System." This e-commerce website, complete with payment gateway and privileges features, ignited my passion
+                        for web development. Overcoming challenges and honing my skills, I now strive to create impactful solutions that enrich the online experience for users and leave a lasting mark in the world of ASP.NET development.
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-1">
+                <h3>Hem Gajjar's Developer Portfolio</h3>
+            </div>
+
+            <div class="footer-2">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <!-- <li><a href="services.html">Services</a></li> -->
+                    <li><a href="projects.html">Projects</a></li>
+
+                    <li><a href="contactus.html">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="footer-3">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/hem__gajjar/"><img src="img/innsta.png" alt="">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/hem.gajjar.73"><img src="img/facebook.png" alt="">Facebook</a>
+                    </li>
+
+                    <li>
+                        <a href="https://twitter.com/13_gajjar"><img src="img/twitter.png" alt="">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/hem-gajjar-970966284/"><img src="img/linkedin.png" alt="">Linked In</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="rights">
+        Copyright &copy; HemsPortfolio.com | All rights reserved
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'ASP Developer', 'VB Developer', 'Web Designer'],
+            typeSpeed: 50,
+        });
+        var typed2 = new Typed('#element2', {
+            strings: ['What I have done so far...'],
+            typeSpeed: 50,
+        });
+
+        function redirect() {
+            window.location.replace("https://github.com/Hem-Gajjar");
+        }
+
+        function resume() {
+            alert("Work in progress")
+        }
+    </script>
+</body>
+
+</html>
