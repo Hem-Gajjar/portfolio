@@ -18,6 +18,7 @@ nav {
     background-color: black;
     color: white;
     opacity: 90%;
+    width: 100%;
 }
 
 nav ul {
@@ -61,20 +62,27 @@ nav ul li a:hover::after {
     margin: 110px 0px;
 }
 
+
+/* 
 .firstSection>div {
-    width: 30%;
-}
+    width: 0%;
+} */
 
 .leftSection {
     font-size: 3.5rem;
     font-weight: bold;
     margin: 30px 0px;
+    width: 30%;
+}
+
+.rightSection {
+    width: 40%;
 }
 
 .rightSection img {
     margin-top: 35px;
-    height: 357px;
-    width: 465px;
+    height: 80%;
+    width: 110%;
 }
 
 .name {
@@ -86,7 +94,7 @@ nav ul li a:hover::after {
     max-width: 80vw;
     margin: auto;
     margin-top: 30px;
-    height: 700px;
+    height: 900px;
 }
 
 .secondSection h1 {
@@ -103,23 +111,24 @@ nav ul li a:hover::after {
 .secondSection hr {
     border: 0;
     background: black;
-    height: 2px;
-    margin: 2rem -6rem;
+    height: 4px;
+    margin: 4rem auto;
+    width: 100%;
 }
 
 .secondSection .box {
     background-color: black;
-    width: 80vw;
+    width: 100%;
     height: 2px;
     margin: 56px 0px;
     display: flex;
 }
 
 .secondSection .vertical {
-    height: 93px;
+    height: 50px;
     width: 2px;
     background-color: black;
-    margin: 0px 150px;
+    margin: 0px auto;
 }
 
 .image-top {
@@ -132,7 +141,7 @@ nav ul li a:hover::after {
 
 .vertical-title {
     position: relative;
-    top: 60px;
+    top: 10px;
     left: -60px;
     width: 180px;
     font-weight: bold;
@@ -141,9 +150,10 @@ nav ul li a:hover::after {
 
 .vertical-desc {
     position: relative;
+    word-wrap: normal;
     left: -60px;
-    top: 80px;
-    width: 250px;
+    top: 30px;
+    width: 15em;
     text-align: justify;
     font-size: 14px;
 }
@@ -244,17 +254,22 @@ button:hover {
 .project_title {
     font-size: 25px;
     font-weight: bolder;
+    width: 100%;
 }
 
 .project_desc {
-    width: 700px;
+    width: 70%;
     text-align: justify;
     margin-top: 5px;
 }
 
 .project_links {
-    margin-left: 35px;
-    width: 250px;
+    /* margin-left: 35px; */
+    width: 29%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
 }
 
 hr {
@@ -331,14 +346,15 @@ hr {
 
 .photo img {
     width: 310px;
-    height: 530px;
+    height: 310px;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px black;
+    margin-top: 60px;
+    /* box-shadow: 2px 2px 10px black; */
 }
 
 .intro {
     margin: 20px;
-    width: 70%;
+    width: 100%;
 }
 
 .intro p {
